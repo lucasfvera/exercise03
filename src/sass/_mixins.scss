@@ -1,0 +1,19 @@
+@use 'stylevars';
+
+@mixin fontFamily() {
+	font-family: $font-family;
+	color: $color-primary;
+}
+
+@mixin smallText() {
+	@include fontFamily();
+	font-size: $font-size-small;
+}
+@mixin mediumText() {
+	@include fontFamily();
+	font-size: $font-size-medium;
+}
+@mixin largeText() {
+	@include fontFamily();
+	font-size: $font-size-large;
+}

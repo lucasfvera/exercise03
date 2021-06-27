@@ -1,0 +1,17 @@
+{
+	"name": "article-preview",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"sass": "^1.29.0"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"sass": "sass --watch src/sass:src/css-output",
+		"live": "live-server .",
+		"script": "echo sass: start watching the sass files\tlive: starts the live server"
+	},
+	"author": "",
+	"license": "ISC"
+}

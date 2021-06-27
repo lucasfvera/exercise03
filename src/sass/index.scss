@@ -1,0 +1,76 @@
+@import './_all.scss';
+
+body {
+	background-color: $color-blue-lightest;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.profile-card-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-content: center;
+	max-width: 700px;
+	width: 80%;
+	border-radius: 20px;
+	// height: 30%;
+	// max-height: 30%;
+	// margin: 0 auto;
+	background-color: #fdfdfd;
+}
+.card-content {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: center;
+	padding: 5%;
+	max-height: fit-content;
+}
+.card-picture {
+	min-width: 40%;
+	object-fit: scale-down;
+	height: auto;
+	overflow: hidden;
+}
+.avatar {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.avatar-text-container {
+	display: flex;
+	flex-direction: column;
+}
+.avatar-profile-pic {
+	height: 100%;
+	max-height: 50px;
+	border-radius: 50px;
+}
+.icon {
+	width: 30px;
+	height: 30px;
+	object-fit: none;
+	border-radius: 30px;
+	background-color: $color-blue-lightest;
+}
+.footer-copyright {
+}
+
+// GENERAL CLASSES
+
+.hero-text {
+	@include largeText();
+}
+.medium-text {
+	@include mediumText();
+}
+
+.bold-text {
+	font-weight: 700;
+}
+.marginless-text {
+	margin: 0;
+}
