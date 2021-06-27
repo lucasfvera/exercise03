@@ -54,7 +54,7 @@ body {
   overflow: hidden;
 }
 
-.avatar {
+.avatar-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -77,6 +77,18 @@ body {
   object-fit: none;
   border-radius: 30px;
   background-color: #ecf2f8;
+}
+
+#share-icon {
+  cursor: pointer;
+}
+
+.dark-blue-box-items {
+  background-color: #48556a;
+}
+
+.hidden {
+  display: none;
 }
 
 .hero-text {
