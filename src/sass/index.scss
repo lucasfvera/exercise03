@@ -9,44 +9,57 @@ body {
 	align-items: center;
 	min-height: 100vh;
 }
-.profile-card-container {
+.container__profile_card {
 	display: flex;
 	justify-content: space-evenly;
 	align-content: center;
 	max-width: 700px;
 	width: 80%;
-	border-radius: 20px;
+	border-radius: 8px;
 	// height: 30%;
 	// max-height: 30%;
 	// margin: 0 auto;
 	background-color: #fdfdfd;
 }
-.card-content {
+.container__profile_card__content {
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
 	justify-content: center;
 	padding: 5%;
+	row-gap: 12px;
 	max-height: fit-content;
 }
-.card-picture {
+.container__profile_card__picture {
 	min-width: 40%;
 	object-fit: scale-down;
 	height: auto;
 	overflow: hidden;
+	box-sizing: border-box;
+	background-image: url('../../images/drawers.jpg');
+	background-clip: content-box;
+	background-position: center ;
+	background-size: auto 100%;
+	border-radius: 8px 0px 0px 8px;
 }
-.avatar-container {
+.container__avatar {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 }
-.avatar-text-container {
+
+.container__avatar_info{
+	display: flex;
+	column-gap: 16px;
+}
+
+.container__avatar_info-text {
 	display: flex;
 	flex-direction: column;
 }
-.avatar-profile-pic {
+.container__avatar_info-profile-pic {
 	height: 100%;
-	max-height: 50px;
+	max-height: 40px;
 	border-radius: 50px;
 }
 .icon {
@@ -75,13 +88,13 @@ body {
 .hero-text {
 	@include largeText();
 }
-.medium-text {
+.text--medium {
 	@include mediumText();
 }
 
-.bold-text {
+.text--bold {
 	font-weight: 700;
 }
-.marginless-text {
+.text--marginless {
 	margin: 0;
 }
